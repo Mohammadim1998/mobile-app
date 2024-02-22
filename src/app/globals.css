@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Anjoman";
+    src: url("/Fonts/ANJOMAN-REGULAR.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "AnjomanMedium";
+    src: url("/Fonts/ANJOMAN-MEDIUM.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "AnjomanSemiBold";
+    src: url("/Fonts/ANJOMAN-SEMIBOLD.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "AnjomanULTRABOLD";
+    src: url("/Fonts/ANJOMAN-ULTRABOLD.woff2") format("woff2");
+    font-display: swap;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  direction: rtl;
+  background-color: #ffffff !important;
+  overflow-x: hidden !important;
+  font-family: Anjoman !important;
+}
+
+
+@layer components {
+  .mobileBG {
+    background: url("/images/svg/vector.svg");
+    background-size: contain;
+    /*background: #27328E;*/
+  }
+}
+
+@layer components {
+  .bgDashboard-mobile {
+    background-image: url("/images/ff.svg");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: bottom;
+  }
+
+  /*
+  .bgDashboard-mobile {
+    background: url("/images/bgDash.jpg");
+    background-size: contain;
+    */
+  /*background: #27328E;*/
+}
+
+
+@layer components {
+  .bgDashboard-mobile2 {
+
+    background: url("/images/bgDash2.jpg") no-repeat;
+    background-size: cover;
+    /*background: #27328E;*/
+  }
+}
+
+@layer components {
+  .bgProfile-mobile {
+    background: url("/images/bgProfile.jpg") no-repeat;
+    background-size: cover;
+    /*background: #27328E;*/
+  }
+}

@@ -1,0 +1,119 @@
+#app {
+  height: 100%
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  position: none !important;
+  /*position: relative !important;*/
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.swiper-pagination {
+  width: 80px !important;
+  height: 20px !important;
+  position: absolute !important;
+  top: 36% !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  width: 4px;
+  height: 4px;
+  opacity: 1 !important;
+  background-color: #FFFFFF !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 8px;
+  height: 8px;
+  background-color: white !important;
+}
+
+
+.registerBtn {
+  position: absolute !important;
+  top: 87.7% !important;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.swiper-button-next {
+  position: absolute !important;
+  top: 91% !important;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #D7DAF4 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 232px;
+  height: 45px;
+  border-radius: 8px;
+  padding: 10px 6px;
+  background-color: #D7DAF4;
+  cursor: pointer;
+}
+
+.swiper-button-next:hover {
+  background-color: #C4C8E9;
+}
+
+.swiper-button-next:active {
+  background-color: #5E6CD3;
+}
+
+.swiper-button-next:active::after {
+  color: #FFFFFF !important;
+}
+
+.swiper-button-next::after {
+  color: #26328D;
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 16px !important;
+  font-family: "Anjoman Medium" !important;
+  content: "بعدی";
+}
+
+.swiper-button-next.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-button-prev {
+  display: none !important;
+}
+
+
+/*
+flex justify-center items-center w-[232px] h-[45px] mb-[61px]  rounded-[8px] py-[10px] px-[6px] bg-[#D7DAF4]
+                     text-[#26328D] hover:bg-[#26328D1C] font-semibold text-base leading-6 cursor-pointer
+*/
